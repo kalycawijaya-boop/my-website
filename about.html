@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+
+<link rel="stylesheet" href="style-about.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+<div class="logo">CV - Kalyca Lucilia Wijaya</div>
+
+<ul class="menu">
+<li><a href="Home.html">Home</a></li>
+<li><a href="about.html">Tentang</a></li>
+</ul>
+</nav>
+
+
+<!-- ABOUT -->
+<section class="about-section">
+
+<h1>Tentang Saya</h1>
+
+<p>
+Halo! Nama saya Kalyca Lucilia Wijaya.
+Saya adalah siswi kelas 9 di Santa Laurensia Suvarna Sutera.
+</p>
+
+<p>
+Saya menyukai olahraga seperti voli, dan basket.
+Selain itu saya juga tertarik dengan musik yaitu bernyanyi, bernyanyi disini hanya kegiatan yang awalnya iseng dan ternyata pas penilaian dapet nilai yang lumayan.
+</p>
+
+</section>
+
+
+<!-- HOBI -->
+<section class="gallery-section">
+
+<h2 class="gallery-title">☆- Hobies! -☆</h2>
+
+<div class="gallery-container">
+
+<div class="gallery-item" onclick="showHobby(1)">
+<img src="foto14.jpeg">
+</div>
+
+<div class="gallery-item" onclick="showHobby(2)">
+<img src="foto15.jpeg">
+</div>
+
+<div class="gallery-item" onclick="showHobby(3)">
+<img src="foto11.jpeg">
+</div>
+
+</div>
+
+<div class="gallery-description" id="hobbyText">
+(klik foto untuk melihat hobi)
+</div>
+
+</section>
+
+
+<!-- MUSIC -->
+<section class="music-section">
+
+<h2>My Favorite Song</h2>
+
+<div class="music-layout">
+
+<div class="info-box">
+<h3>Why??</h3>
+<p>
+Untuk sekarang, aku sedang relate dengan lagu "bukan orang nya". Lagu ini sedang relate dengan situasi ku sekarang karena harus bisa melepas dan mengiklhaskan orang.
+</p>
+</div>
+
+
+<a href="https://youtu.be/f-fEeF12FH4" target="_blank" class="cd-wrapper">
+
+<div class="cd">
+
+<div class="video-circle">
+
+<iframe
+src="https://www.youtube.com/embed/f-fEeF12FH4"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+</div>
+
+<div class="cd-hole"></div>
+
+</div>
+
+</a>
+
+
+<div class="info-box">
+<h3>Makna Lagu</h3>
+<p>
+Lagu "Bukan Orangnya" dari Juicy Luicy bermakna tentang keikhlasan menerima perpisahan dan melepaskan seseorang yang ternyata bukan jodoh atau pasangan yang tepat. Lagu ini menekankan bahwa kesedihan akibat perpisahan hanyalah sementara, dan tidak perlu berlarut-larut mencari alasan atas berakhirnya sebuah hubungan.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SMA TUJUAN -->
+<section class="school-section">
+
+<h2>SMA Tujuan</h2>
+
+<a href="https://share.google/4fDD4VvlwE09NyBQA" target="_blank">
+
+<img src="logolas.png" class="school-logo">
+
+</a>
+
+<h3>Laurensia Suvarna Sutera</h3>
+
+<p>(klik logo)</p>
+
+</section>
+
+
+<!-- FAVORIT -->
+<section class="gallery-section">
+
+<h2 class="gallery-title">☆- Favo! -☆</h2>
+
+<div class="gallery-container">
+
+<div class="gallery-item" onclick="showFav(1)">
+<img src="foto6.jpeg">
+</div>
+
+<div class="gallery-item" onclick="showFav(2)">
+<img src="foto7.jpeg">
+</div>
+
+<div class="gallery-item" onclick="showFav(3)">
+<img src="foto8.jpeg">
+</div>
+
+</div>
+
+<div class="gallery-description" id="favText">
+(klik foto untuk melihat favorit)
+</div>
+
+</section>
+
+
+<!-- QUOTES -->
+<section class="quotes-section">
+
+<h2 class="quotes-title">Quotes</h2>
+
+<div class="quotes-container">
+
+<div class="quote-box">
+Mekar dengan caramu sendiri, di waktu yang paling tepat menurut semesta.
+</div>
+
+<div class="quote-box">
+Kebahagiaan bukan tujuan, melainkan cara kita melangkah hari ini.
+</div>
+
+<div class="quote-box">
+Kalau belum selesai sama masa lalu, jangan mulai yang baru.
+</div>
+
+</div>
+
+</section>
+
+
+<script>
+
+function showHobby(n){
+
+const text=document.getElementById("hobbyText");
+
+if(n==1){text.innerHTML="Basket";}
+if(n==2){text.innerHTML="Voli";}
+if(n==3){text.innerHTML="Nyanyi";}
+
+}
+
+function showFav(n){
+
+const text=document.getElementById("favText");
+
+if(n==1){text.innerHTML="Tiramisu Cake";}
+if(n==2){text.innerHTML="Sushi Aeon";}
+if(n==3){text.innerHTML="Kopi Kenangan";}
+
+}
+
+</script>
+
+
+</body>
+</html>

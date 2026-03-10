@@ -1,0 +1,192 @@
+/* ================= RESET ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #1C2E46;
+  color: white;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: #354E6B;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #4fc3f7;
+}
+
+/* ================= ABOUT ================= */
+
+.about-section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.about-section h1 {
+  margin-bottom: 20px;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery-section {
+  padding: 80px 40px;
+  text-align: center;
+  background: #1C2E46;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.gallery-item {
+  width: 240px;
+  height: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-description {
+  margin-top: 20px;
+  color: #cbd5e1;
+}
+
+/* ================= MUSIC ================= */
+
+.music-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.music-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cd {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: black;
+  position: relative;
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.video-circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.video-circle iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.cd-hole {
+  width: 40px;
+  height: 40px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info-box {
+  width: 260px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #13233d;
+}
+
+/* ================= SCHOOL ================= */
+
+.school-section {
+  padding: 80px;
+  text-align: center;
+}
+
+.school-logo {
+  width: 160px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.school-logo:hover {
+  transform: scale(1.1);
+}
+
+/* ================= QUOTES ================= */
+
+.quotes-section {
+  padding: 80px;
+  text-align: center;
+}
+
+.quotes-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.quote-box {
+  width: 260px;
+  padding: 25px;
+  border-radius: 20px;
+  background: #13233d;
+}
