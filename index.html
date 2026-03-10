@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Kalyca Lucilia Wijaya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="logo">CV - Kalyca Lucilia Wijaya</div>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">Tentang</a></li>
+  </ul>
+</nav>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero">
+    <div class="hero-container">
+      
+      <div class="hero-image">
+        <img src="foto12.jpeg" alt="Foto Kalyca">
+      </div>
+
+      <div class="hero-text">
+        <h1>Halo, Saya Kalyca Lucilia Wijaya</h1>
+        <p>
+          Haii! Perkenalkan, aku Kalyca. AKu adalah seorang zodiac cancer yang yangsuka kupu-kupu biru dan cukup perasa. Aku adalah tipe orang yang merasa bahwa tantangan itu harus di coba. Karena dengan itu, aku jadi bisa belajar, berkembang, dan mengenal kemampuan diri lebih dalam. Aku juga cukup aktif dalam berbagai kegiatan baru yang dapat menambah pengalaman serta memperluas wawasan. Bagiku, mencoba hal-hal baru bukan hanya sekadar pengalaman, tetapi juga cara untuk melatih keberanian, kedisiplinan, dan kemampuan dalam menghadapi berbagai situasi.
+        </p>
+       
+        <p>
+          Di sisi lain, aku juga memiliki rasa kepedulian yang sangat tinggi terhadap orang-orang terdekat di sekitar ku. Hubungan dengan keluarga, sahabat, maupun orang yang aku sayangi merupakan hal yang sangat berharga. Maka dari itu aku selalu berusaha hadir dan memberikan perhatian kepada orang orang sekitar ku. Kepedulian itu membuat ku terbiasa peka terhadap kondisi orang lain serta memiliki rasa tanggung jawab yang tinggi terhadap setiap masalah maupun tugas yang diberikan, sehingga aku selalu berusaha menyelesaikannya dengan sebaik mungkin.
+        </p>
+
+        <!-- BUTTON SCROLL KE GALLERY -->
+        <a href="#gallery" class="btn">Lihat Profil</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= GALLERY SECTION ================= -->
+  <section class="gallery-section" id="gallery">
+
+    <h2 class="gallery-title">☆- Profile Picture -☆</h2>
+
+    <div class="gallery-container">
+
+      <div class="gallery-item" onclick="showText(1)">
+        <img src="foto13.jpeg" alt="Foto 2">
+      </div>
+
+      <div class="gallery-item" onclick="showText(2)">
+        <img src="foto5.jpeg" alt="Foto 3">
+      </div>
+
+      <div class="gallery-item" onclick="showText(3)">
+        <img src="foto4.jpeg" alt="Foto 4">
+      </div>
+
+    </div>
+
+    <div class="gallery-description" id="descriptionBox">
+      (klik salah satu foto untuk melihat deskripsi)
+    </div>
+
+  </section>
+
+
+  <!-- ================= SCRIPT ================= -->
+  <script>
+    function showText(number){
+      const box = document.getElementById("descriptionBox");
+
+      if(number === 1){
+        box.innerHTML = "Aku jadi tim school tour";
+      }
+
+      if(number === 2){
+        box.innerHTML = "Aku dengan kacamata baru";
+      }
+
+      if(number === 3){
+        box.innerHTML = "Aku dan Mr. Nuel";
+      }
+    }
+  </script>
+
+</body>
+</html>
